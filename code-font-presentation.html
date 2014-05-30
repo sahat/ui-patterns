@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>Code Font for Presentations</title>
+  <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>  <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
+  <style type="text/css">
+    pre.prettyprint {
+      border: 0;
+      font-size: 32px;
+      font-family: 'Source Code Pro', monospace;
+    }
+  </style>
+</head>
+<body>
+<pre class="prettyprint lang-js">
+function A(a, b, c) {
+  var ar = [a, b, c];
+  return function B(i) {
+    return ar[i];
+  };
+}
+
+var b = A('Here', 'I', 'am');
+console.log(b(1));
+</pre>
+</body>
+</html>
