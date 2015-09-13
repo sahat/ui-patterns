@@ -1,18 +1,17 @@
-<!DOCTYPE html>
-<html>
-<head lang="en">
-  <meta charset="UTF-8">
-  <title>Fluid Layout</title>
-  <style type="text/css">
-    @media screen and (min-width: 31.42em) {
-      .c2, .c3 {
-        float: left;
-        width: 50%;
-      }
+---
+layout: page
+title: Fluid Layout
+---
+
+<style>
+  @media screen and (min-width: 31.42em) {
+    .c2, .c3 {
+      float: left;
+      width: 50%;
     }
-  </style>
-</head>
-<body>
+  }
+</style>
+
 <div class="c">
   <div>
     <h2>Main Content (1st in source order)</h2>
@@ -34,5 +33,3 @@
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque turpis diam, tincidunt nec convallis vitae, dapibus vitae enim. Nam bibendum nisl in risus imperdiet vestibulum.</p>
   </div>
 </div>
-</body>
-</html>

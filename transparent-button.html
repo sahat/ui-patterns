@@ -1,34 +1,35 @@
-<!DOCTYPE html>
-<html>
-<head lang="en">
-  <meta charset="UTF-8">
-  <title>Transparent button</title>
-  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"/>
-  <style>
-    body {
-      padding-top: 20px;
-      background-color: #5cc9df;
-    }
-    .btn-transparent {
-      text-transform: uppercase;
-      color: #fff;
-      font-size: 16px;
-      padding: 15px 30px;
-      background: transparent;
-      border: 2px solid #fff;
-      transition:all .3s ease-out;
-      -webkit-transition:all .3s ease-out;
-    }
-    .btn-transparent:hover {
-      color: #5cc9df;
-      background-color: #fff;
-      box-shadow: 0 3px rgba(0,0,0,0.1);
-    }
-  </style>
-</head>
-<body>
+---
+layout: page
+title: Transparent Button
+---
+
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+
+<style>
+  body {
+    padding-top: 20px;
+    background-color: #5cc9df;
+  }
+
+  .btn-transparent {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 16px;
+    padding: 15px 30px;
+    background: transparent;
+    border: 2px solid #fff;
+    transition: all .3s ease-out;
+    -webkit-transition: all .3s ease-out;
+  }
+
+  .btn-transparent:hover {
+    color: #5cc9df;
+    background-color: #fff;
+    box-shadow: 0 3px rgba(0, 0, 0, 0.1);
+  }
+</style>
+
 <div class="container">
   <a class="btn btn-transparent" href="#">← Hello World</a>
 </div>
-</body>
-</html>
