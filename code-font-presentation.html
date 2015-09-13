@@ -1,0 +1,31 @@
+---
+layout: page
+title: Code Font for Presentations
+---
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Code+Pro">
+<script src="//google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
+
+<style>
+  body {
+    padding: 10px 40px;
+  }
+
+  pre.prettyprint {
+    border: 0;
+    font-size: 32px;
+    font-family: 'Source Code Pro', monospace;
+  }
+</style>
+
+<pre class="prettyprint lang-js">
+function A(a, b, c) {
+  var ar = [a, b, c];
+  return function B(i) {
+    return ar[i];
+  };
+}
+
+var b = A('Here', 'I', 'am');
+console.log(b(1));
+</pre>
