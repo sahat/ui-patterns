@@ -1,0 +1,99 @@
+---
+layout: page
+title: iOS 9 News App Effect
+---
+
+<style>
+  * {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  body {
+    text-align: center;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  .project {
+    position: relative;
+    z-index: 1;
+    display: block;
+    background: #fff;
+    width: 150px;
+    margin: 0 auto;
+    transition: transform 0.1s linear;
+  }
+  .project:active {
+    transform: scale(0.95);
+  }
+  .project.active {
+    border: 4px solid #cc1417;
+    border-radius: 6px;
+    width: 160px;
+    height: 208px;
+    position: relative;
+
+  }
+  .project.active:after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: #fff;
+    border-radius: 6px;
+    z-index: -1;
+  }
+  .thumbnail {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/f/fb/Cnn_logo_red_background.png);
+    height: 150px;
+    border: 1px solid #cc1417;
+    border-bottom: 0;
+    border-radius: 6px 6px 0 0;
+    background-size: cover;
+  }
+  .content {
+    padding: 15px 0;
+    font-size: 14px;
+    text-align: center;
+    border: 1px solid #d5d5d5;
+    border-top: 0;
+    border-radius: 0 0 6px 6px;
+    background-color: #fcfcf9;
+  }
+  .content h3 {
+    color: #444;
+    margin: 0;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+
+
+</style>
+
+<div class="project">
+  <div class="thumbnail">
+  </div>
+  <div class="content">
+    <h3>CNN</h3>
+  </div>
+
+  <div class="module"></div>
+</div>
+
+<script>
+  var el = document.querySelector('.project');
+
+  el.addEventListener('click', clickHandler);
+
+  function clickHandler(event) {
+    if (el.classList.contains('active')) {
+      el.classList.remove('active');
+    } else {
+      el.classList.add('active');
+    }
+  }
+</script>
